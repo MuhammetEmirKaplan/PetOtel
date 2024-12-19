@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FurEver | Kayıt Sayfası</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn-icons-png.flaticon.com/512/2331/2331399.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/kayıt-ol-style.css" />
+    <script src="css/script.js" defer></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <button href="#" class="btn btn-login btn-colored" id="login">
+          Giriş Yap
+        </button>
+        <button href="#" class="btn btn-register" id="register">Kayıt Ol</button>
+      </div>
+      <div class="form-page">
+        <button class="sound-btn" id="soundBtn">
+          <i class="fa-solid fa-bullhorn"></i>
+        </button>
+
+        <div class="login-form">
+          <h3>Giriş Yap</h3>
+          <div id="warningBox" class="warning active minitext">
+            <p id="warningText">Login Failed :</p>
+          </div>
+
+          <form action="">
+            <input type="email" id="loginEmail" placeholder="Email" />
+            <div class="form-group">
+              <input type="password" id="password" placeholder="Password" />
+              <span>
+                <button type="button" id="eye-icon">
+                  <i id="eyeOpen" class="fa-solid fa-eye"></i>
+                  <i
+                    id="eyeClose"
+                    class="fa-solid fa-eye-slash active"
+                  ></i></button
+              ></span>
+            </div>
+            <div class="remember-me">
+              <input type="checkbox" class="checkbox" id="checkbox" />
+              <p>Remember Me</p>
+            </div>
+          </form>
+          <a href="index.html#hakkinda">
+          <button
+            type="submit"
+            id="loginSubmit"
+            class="btn btn-login btn-colored"
+          >
+            Giriş Yap
+          </button></a>
+          <p class="minitext" style="color: #fff">
+            Need an account ?
+            <a
+              id="signupText"
+              style="text-decoration: underline"
+              href="#"
+              onclick="return false;"
+              >Sign Up</a
+            >
+          </p>
+        </div>
+        <div class="register-form active">
+          <h3>Sign Up</h3>
+          <div id="warningBoxRegister" class="warning active minitext">
+            <p id="warningTextRegister">Sign up Failed :</p>
+          </div>
+          <form action="">
+            <input type="text" id="registerUsername" placeholder="Username" />
+            <input type="email" id="registerEmail" placeholder="Email" />
+            <div class="form-group">
+              <input type="password" id="password2" placeholder="Password" />
+              <span>
+                <button type="button" id="eye-icon-2">
+                  <i id="secondeyeOpen" class="fa-solid fa-eye"></i>
+                  <i
+                    id="secondeyeClose"
+                    class="fa-solid fa-eye-slash active"
+                  ></i></button
+              ></span>
+            </div>
+            <div class="form-group">
+              <input
+                type="password"
+                id="password-3"
+                placeholder="Confirm Password"
+              />
+              <span>
+                <button type="button" id="eye-icon-3">
+                  <i id="thirdeyeOpen" class="fa-solid fa-eye"></i>
+                  <i
+                    id="thirdeyeClose"
+                    class="fa-solid fa-eye-slash active"
+                  ></i></button
+              ></span>
+            </div>
+          </form>
+          <button id="registerSubmit" class="btn btn-register btn-colored">
+            Sign Up
+          </button>
+          <p class="minitext" style="color: #fff">
+            You already have an account ?
+            <a
+              style="text-decoration: underline"
+              id="loginText"
+              href=""
+              onclick="return false;"
+              >Login</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

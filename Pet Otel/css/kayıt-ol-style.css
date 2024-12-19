@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  display: flex;
+  overflow: hidden;
+  background-color: #47597e;
+  align-items: center;
+  font-size: 18px;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: inherit;
+  padding: 6rem 10rem;
+}
+
+.container {
+  height: 100%;
+  width: 40%;
+  background: url("https://images.unsplash.com/photo-1517271595-b80f70bf6aa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 32px 0 0 32px;
+  padding: 0 2rem;
+}
+
+.container .btn {
+  width: 75%;
+}
+
+.btn {
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  border-radius: 32px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #dbe6fd;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.btn:nth-child(1) {
+  margin-bottom: 0.5rem;
+}
+
+.btn-login {
+  border: 2px solid #041c32;
+  margin: 3rem;
+}
+
+.btn-login:hover {
+  background-color: #04293a;
+  border: 2px solid #04293a;
+
+  transition: 0.5s;
+}
+
+.btn-register {
+  border: 2px solid #041c32;
+  margin: 3rem;
+}
+
+.btn-register:hover {
+  background-color: #04293a;
+  border: px solid #04293a;
+  transition: 0.5s;
+}
+
+.btn-colored {
+  background-color: #041c32;
+}
+
+.form-page {
+  width: 100%;
+  height: 100%;
+  background-color: #293b5f;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0 32px 32px 0;
+  position: relative;
+}
+
+.form-page .sound-btn {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  right: 2rem;
+  top: 2rem;
+}
+
+.login-form {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.remember-me {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+
+.remember-me .checkbox {
+  width: 1.5rem;
+}
+
+.login-form h3 {
+  color: #dbe6fd;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.login-form form {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+}
+
+.login-form input {
+  width: 100%;
+  height: 3rem;
+  padding: 1rem 1rem;
+  font-size: 18px;
+  border-radius: 32px;
+  outline: none;
+  border: none;
+  color: #777777;
+  background-color: #dbe6fd;
+}
+
+.login-form .btn {
+  margin-top: 2rem !important;
+}
+
+.login-form input:focus {
+  outline: none;
+  border: none;
+}
+
+.login-form .form-group,
+.register-form .form-group {
+  position: relative;
+  margin: 2rem;
+  width: 100%;
+}
+
+.login-form span,
+.register-form span {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translate(5%, -50%);
+}
+
+.register-form {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.register-form h3 {
+  color: #dbe6fd;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.register-form form {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+}
+
+.register-form input {
+  margin: 1rem 0;
+  width: 100%;
+  height: 3rem;
+  padding: 1rem;
+  font-size: 18px;
+  border-radius: 32px;
+  outline: none;
+  border: none;
+  color: #777777;
+  background-color: #dbe6fd;
+}
+
+.register-form .form-group {
+  margin: 0rem;
+}
+
+.register-form .btn {
+  margin-top: 1rem !important;
+}
+
+.register-form input:focus {
+  outline: none;
+  border: none;
+}
+.minitext {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.warning {
+  display: flex;
+  color: #fff;
+  background-color: #c84361;
+  border-radius: 32px;
+  padding: 0.5rem;
+  margin: 1rem;
+  transition: 0.5s;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.success {
+  display: flex;
+  color: #fff;
+  background-color: #90c8ac;
+  border-radius: 32px;
+  padding: 0.5rem;
+  margin: 1rem;
+  transition: 0.5s;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.active {
+  display: none;
+}
+@media only screen and (max-width: 1024px) {
+  .main-container {
+    padding: 3rem 5rem;
+  }
+
+  .container {
+    display: none;
+  }
+  .form-page {
+    width: 100%;
+    border-radius: 32px;
+    overflow: hidden;
+  }
+
+  .warning {
+    margin: 0;
+    height: 50px;
+  }
+
+  .minitext {
+    text-align: center;
+    padding: 0 1rem;
+  }
+  #loginText {
+    text-align: center;
+  }
+  #signupText {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 655px) {
+  .container {
+    display: none;
+  }
+
+  .main-container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .form-page {
+    width: 100%;
+    border-radius: 32px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+  .warning {
+    height: 80px;
+  }
+  #warningTextRegister {
+    font-size: 18px;
+  }
+  .minitext {
+    text-align: center;
+    padding: 0 1rem;
+  }
+  #loginText {
+    text-align: center;
+  }
+  #signupText {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    display: none;
+  }
+
+  .main-container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .form-page {
+    width: 100%;
+    border-radius: 32px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .form-page .sound-btn {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    right: 0rem;
+    top: 0;
+  }
+
+  .minitext {
+    text-align: center;
+    padding: 0 1rem;
+  }
+  #loginText {
+    text-align: center;
+  }
+  #signupText {
+    text-align: center;
+  }
+}

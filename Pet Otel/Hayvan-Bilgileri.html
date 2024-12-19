@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üyelik Menüsü</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 600px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        td label {
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="password"], select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="checkbox"], input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<table>
+   
+ <h1> Kayıt Menüsü</h1>
+    <p>Bu menü, üyelik işlemi için gereken bilgileri toplamak için tasarlanmıştır. Lütfen gerekli tüm alanları doldurun.</p>
+    <hr>
+<h2>Evcil Hayvan Bilgileri</h2>
+<table>
+    <tr>
+        <td><label for="ad">Adı:</label></td>
+        <td><input type="text" placeholder="Adını Giriniz"></td>
+    </tr>
+    <tr>
+        <td><label for="soyad">Tür:</label></td>
+        <td>
+            <input type="radio" name="cinsiyet">Kedi
+            <input type="radio" name="cinsiyet">Köpke
+            <input type="radio" name="cinsiyet">Kuş
+            <input type="radio" name="cinsiyet">Balık
+            <input type="radio" name="cinsiyet">Diğer
+        </td>
+    </tr>
+    <tr>
+        <td><label for="soyad">Irk:</label></td>
+        <td>
+            <select  id="ırk">
+                <option>Poodle</option>
+                <option>Malinos</option>
+                <option>Golden Terirer</option>
+                <option>Van Kedisi</option>
+                <option>Siam Kedisi</option>
+                <option>British</option>
+                <option>Saka</option>
+                <option>Kanarya</option>
+                <option>İspinoz</option>
+                <option>Lepistes</option>
+                <option>Beyaz Melek</option>
+                <option>Japon Balığı</option>
+                <option>Diğer</option>
+            </select>
+        </td>
+    </tr>    
+    <tr>
+        <td><label for="şehir">Şehir:</label></td>
+        <td>
+            <select id="sehir">
+                <option>Bursa</option>
+                <option>Ankara</option>
+                <option>İstanbul</option>
+                <option>Eskişehir</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td><label for="cinsiyet">Cinsiyetiniz:</label></td>
+        <td>
+            <input type="radio" name="cinsiyet">Erkek
+            <input type="radio" name="cinsiyet">Kadın
+            <input type="radio" name="cinsiyet">Bilmiyorum
+        </td>
+    </tr>
+    <tr>
+        <td><label for="yas">Yaş:</label></td>
+        <td><input type="number" placeholder="Yaşını Girin."></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="odalar.html" style="text-decoration: none;"><button>Kaydet</button></a></td>
+
+    </tr>
+</table>
+</body>
+</html>
